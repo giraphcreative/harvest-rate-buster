@@ -4,7 +4,7 @@
 $yellow: #F3C25B;
 $teal: #83BAB2;
 $green: #8B9E74;
-$red: #831528;
+$red: #BE1E2D;
 $grey: #414042;
 
 
@@ -37,11 +37,24 @@ header {
 	background: url(../img/bg-header.jpg) center center no-repeat;
 	background-size: cover;
 	padding: 25px 0;
-	border-bottom: 25px solid $red;
+	text-align: center;
+
+	@include respond-to( 600px ) {
+		text-align: right;
+	}
 
 	@include respond-to( 768px ) {
 		padding: 50px 0;
 	}
+}
+
+
+h1 {
+	background-color: $red;
+	color: white;
+	@include font-title;
+	text-align: center;
+	padding: 20px 0;
 }
 
 
@@ -75,7 +88,7 @@ header {
 	}
 
 	.calculator {
-		background: url(../img/bg-box.png);
+		background-color: $red;
 		color: white;
 		padding: 20px 15px 30px;
 		margin-top: 30px;

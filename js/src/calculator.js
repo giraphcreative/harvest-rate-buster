@@ -4,7 +4,7 @@ $(function(){
 
 	$(".rate").keyup(function(){
 		var new_rate = parseFloat( $(this).val().replace(/[^\d.]/ig, '') ) - 1;
-		$(".rate_compare").val( ( new_rate < 1.75 ? 1.75 : new_rate ) );
+		$(".rate_compare").val( ( new_rate < 1.99 ? 1.99 : new_rate ) );
 	});
 
 	$(".calculator").accrue({
